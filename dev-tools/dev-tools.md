@@ -49,17 +49,18 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
 ```shell
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
 
 
 Após isso utilize o comando abaixo para dar refresh no PATH.
 
-```
+```shell 
 source ~/.zshrc
 ```
 
 Para verificar sua instalação use comando:
 
-```
+```shell
 nvm -v
 ```
 
@@ -67,6 +68,7 @@ Instale o [node](https://nodejs.org "https://nodejs.org/") versão `16.16.0` com
 
 ```shell
 nvm install 16.16.0 && nvm use 16.16.0 && node -v
+```
 
 
 ## Instalando o yarn
@@ -74,10 +76,11 @@ Instale o [yarn](https://classic.yarnpkg.com "https://classic.yarnpkg.com/") glo
 
 ```shell
 npm install --global yarn
+```
 
 ## Instale o [RVM](https://rvm.io/ "https://rvm.io/") para gerenciar as versões do ruby
 
-```
+```shell
 brew install gnupggpg --keyserver hkp://keys.gnupg.net    --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3\curl -sSL https://get.rvm.io | bash -s stable --ruby
 ```
 
@@ -93,6 +96,7 @@ Instale o [watchman](https://facebook.github.io/watchman/"https://facebook.githu
 
 ```shell
 brew updatebrew install watchman
+```
 
 ## Instalação da JDK(Java Development Kit) 
 
@@ -100,15 +104,21 @@ brew updatebrew install watchman
 
 ```shell
 curl -s "https://get.sdkman.io" | bash
+```
 
 - Depois execute o seguinte comando:
 
 ```shell
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
 
 - Instale a JDK 17 com o seguinte comando:
 
 ```shell
 sdk install java 17.0.12-amzn
+```
 
 - Ele vai te perguntar se deseja setar a versão 17 como default dê y para sim
+
+
+## Configuração das variáveis de ambiente ANDROID_HOME e JAVA_HOME
