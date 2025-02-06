@@ -63,9 +63,8 @@ nvm -v
 
 Instale o [node](https://nodejs.org "https://nodejs.org/") versão `16.16.0` com a nvm.
 
-```
-nvm install 16.16.0nvm use 16.16.0node -v
-```
+```shell
+nvm install 16.16.0 && nvm use 16.16.0 && node -v
 
 Instale o [yarn](https://classic.yarnpkg.com "https://classic.yarnpkg.com/") globalmente
 
