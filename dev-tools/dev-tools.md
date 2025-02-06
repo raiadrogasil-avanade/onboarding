@@ -122,3 +122,23 @@ sdk install java 17.0.12-amzn
 
 
 ## Configuração das variáveis de ambiente ANDROID_HOME e JAVA_HOME
+
+- Em seu arquivo de shell:
+```shell
+code ~/.zshrc
+```
+
+Cole as seguintes linhas nele:
+```shell
+# JAVA_HOME
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
+```
+
+```shell
+# ANDROID_HOME CONFIG
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+```
