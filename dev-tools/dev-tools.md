@@ -36,15 +36,18 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 ao final do seu arquivo de PATH code (`.zshrc` ou `.bash_profile` ou `.bashrc`), que pode ser acessado com os comandos:
 
-- ```shell
-code  ~/.zshrc
-```
-- ```shell
-nano  ~/.zshrc
-```- ```shell
-vim  ~/.zshrc
-```
+- Para abrir no VS Code:  
+  ```shell
+  code ~/.zshrc
 
+
+- Para abrir com o nano:  
+  ```shell
+  nano ~/.zshrc
+
+- Para abrir com o vim:  
+  ```shell
+  vim ~/.zshrc
 
 Após isso utilize o comando abaixo para dar refresh no PATH.
 
