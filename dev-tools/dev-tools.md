@@ -38,8 +38,11 @@ ao final do seu arquivo de PATH code (`.zshrc` ou `.bash_profile` ou `.bashrc`),
 
 - ```shell
 code  ~/.zshrc
-vim ~/.zshrc
-nano ~/.zshrc
+```
+- ```shell
+nano  ~/.zshrc
+```- ```shell
+vim  ~/.zshrc
 ```
 
 
