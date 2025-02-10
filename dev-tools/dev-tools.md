@@ -1,5 +1,4 @@
-# Instalação das ferramentas de desenvolvimento
-
+# Instalação e configuração das ferramentas de desenvolvimento
 
 ## Instalando o Homebrew
 Instale o [Homebrew](https://brew.sh "https://brew.sh/") para gerenciamento de pacotes.
@@ -20,6 +19,35 @@ Instale o [git](https://git-scm.com "https://git-scm.com/").
 ```
 brew install git
 ```
+
+## Configuração do oh-my-zsh (OPCIONAL)
+- Para auxiliar no desenvolvimento utilizamos o oh-my-shell um framework para o zsh que auxilia com autocomplete e syntax-highlighting
+
+Para instalar o oh-my-zsh utilize o seguinte comando:
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Agora baixe os plugins:
+- Autosuggestions:
+```shell
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
+- Syntax-Highlighting 
+```shell
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+```
+
+- Abra o arquivo de shell:
+```shell
+code ~/.zshrc
+```
+
+na linha de plugins do .zshrc cole as seguintes linhas:
+
+
+
 
 ## Instalando o NVM
 Instale o [nvm](https://github.com/nvm-sh/nvm "https://github.com/nvm-sh/nvm") para gerênciamento das versões do node.
@@ -142,3 +170,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 ```
+
+## Instalação do Flipper
+- Faça o download do flipper no seguinte link [Flipper](https://fbflipper.com/)
+  - O flipper é como se fosse um chrome dev tools, nos ajuda a achar logs e ver as requisições do App
