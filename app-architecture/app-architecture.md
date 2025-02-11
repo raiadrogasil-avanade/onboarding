@@ -116,3 +116,6 @@ export class ZipCodeStateControllerImpl implements ZipCodeStateController {
   }
 }
 ```
+
+## Diagrama de exemplo da arquitetura do app
+![Diagrama de arquitetura do App](../docs/app-architecture-diagram.drawio.png)
